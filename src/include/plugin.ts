@@ -87,13 +87,15 @@ export default class Extension {
     }) as Scratch.Info;
   }
 
-  public register() {
+  public register(hook?: () => any) {
     if (commonjs) return;
     try {
       Scratch.extensions.register(this);
     } catch (e) {
       console.info(`Failed to load extension ${this.option.name}`);
       if (this.option.debug) console.error(e);
+    } finally {
+      hook && hook();
     }
   }
 }

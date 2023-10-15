@@ -33,4 +33,4 @@ jobs:
         asset_name: extension.js
         asset_content_type: text/javascript
       env:
-        GITHUB_TOKEN: ${{ secrets.TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

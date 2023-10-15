@@ -1,8 +1,12 @@
 {
-  "en": {
-    "title": ""
-  },
   "zh": {
-    "title": ""
+    "title": "AI聊天",
+    "chat": "聊天消息[message]模型[model]启用在线搜索[web]",
+    "set": "设置自定义ApiKey [key]"
+  },
+  "en": {
+    "title": "AI Chat",
+    "chat": "Chat message [message] model [model] enable online searching [web]",
+    "set": "Set Custom ApiKey [key]"
   }
 }
